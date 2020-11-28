@@ -2,8 +2,8 @@
   "name": "lit-element-starter-ts",
   "version": "0.0.0",
   "description": "A simple web component",
-  "main": "index.js",
-  "module": "index.js",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
   "type": "module",
   "scripts": {
     "build": "tsc",
