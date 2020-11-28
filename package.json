@@ -30,10 +30,12 @@
   },
   "keywords": [
     "web-components",
-    "lit-element",
-    "typescript"
+    "fawn-components",
+    "reusable components",
+    "pwa components",
+    "modern components"
   ],
-  "author": "The Polymer Authors",
+  "author": "Abishek",
   "license": "BSD-3-Clause",
   "dependencies": {
     "lit-element": "^2.3.1"
