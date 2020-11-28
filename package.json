@@ -1,6 +1,7 @@
 {
-  "name": "lit-element-starter-ts",
+  "name": "fawn-components",
   "version": "0.0.0",
+  "private":true,
   "description": "A simple web component",
   "main": "./lib/index.js",
   "module": "./lib/index.js",
