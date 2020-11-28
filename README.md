@@ -116,3 +116,11 @@ For information on building application projects that include LitElement compone
 ## More information
 
 See [Get started](https://lit-element.polymer-project.org/guide/start) on the LitElement site for more information.
+
+
+Things to do
+
+
+- [ ] Progres
+- [ ] Tooltip
+- PWA
