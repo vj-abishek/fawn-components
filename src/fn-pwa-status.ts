@@ -33,6 +33,7 @@ export class FnPwaStatus extends LitElement{
         background-color:var(--fn-pwa-status);
         color:var(--fn-pwa-status-color);
         border-radius:8px;
+        z-index:9999;
         line-height:50px;
         display:flex;
         font-family: Segoe UI,system-ui,-apple-system,sans-serif;

@@ -37,7 +37,7 @@ export class FnPwaBanner extends LitElement{
       border-radius: 0px;
       padding: 10px;
       position:fixed;
-      z-index:999px;
+      z-index:999;
       bottom: 0px;
       left: 0px;
       color:var(--fn-pwa-banner-color);
