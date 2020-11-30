@@ -60,6 +60,16 @@ export class FnPwaBanner extends LitElement{
         opacity:1;
       }
   }
+  @-webkit-keyframes slide{
+    0%{
+        transform:translate(-500px);
+        opacity:0;
+      }
+      100%{
+        transform:translate(0px);
+        opacity:1;
+      }
+  }
 
   .fn-pwa-banner > div{
       display: flex;

@@ -15,8 +15,8 @@ import {html, customElement,  css, property, LitElement} from 'lit-element';
  */
 @customElement('fn-pwa-button')
 export class FnPwaButton extends LitElement{
-    _prompt: any;
-    _trigger: boolean;
+    private _prompt: any;
+    private _trigger: boolean;
 
     constructor(){
         super();

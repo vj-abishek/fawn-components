@@ -1,11 +1,14 @@
 {
   "name": "fawn-components",
-  "version": "0.0.0",
+  "version": "0.0.3",
   "private":false,
   "description": "A simple web component",
-  "main": "lib/**",
-  "module": "lib/index.js",
+  "module": "./lib/index.js",
   "type": "module",
+  "types":"lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
