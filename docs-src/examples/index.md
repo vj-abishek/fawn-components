@@ -1,6 +1,6 @@
 ---
 layout: example.11ty.cjs
-title: <my-element> ⌲ Examples ⌲ Basic
+title: fawn-components ⌲ Examples ⌲ Basic
 tags: example
 name: Basic
 description: A basic example

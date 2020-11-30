@@ -2,55 +2,191 @@
   "version": "experimental",
   "tags": [
     {
-      "name": "my-element",
-      "path": "./src/my-element.ts",
-      "description": "An example element.",
+      "name": "fn-pwa-banner",
+      "path": "./src/fn-pwa-banner.ts",
+      "description": "A custom pwa install banner",
       "attributes": [
         {
-          "name": "name",
-          "description": "The name to say \"Hello\" to.",
+          "name": "value",
+          "description": "Sets value for the button",
           "type": "string",
-          "default": "\"World\""
+          "default": "\"Installing uses almost no storage and provides a quick way  to return to this app\""
         },
         {
-          "name": "count",
-          "description": "The number of times the button has been clicked.",
-          "type": "number",
-          "default": "0"
+          "name": "title",
+          "description": "Sets the title",
+          "type": "string",
+          "default": "\"Install\""
+        },
+        {
+          "name": "background",
+          "description": "Defines the background color",
+          "type": "string",
+          "default": "\"#602ac1\""
+        },
+        {
+          "name": "show",
+          "description": "If defined as show=\"false\", The componenet is not shown",
+          "type": "string",
+          "default": "\"true\""
+        },
+        {
+          "name": "color",
+          "description": "Defines color",
+          "type": "string",
+          "default": "\"#fff\""
         }
       ],
       "properties": [
         {
-          "name": "name",
-          "attribute": "name",
-          "description": "The name to say \"Hello\" to.",
+          "name": "value",
+          "attribute": "value",
+          "description": "Sets value for the button",
           "type": "string",
-          "default": "\"World\""
+          "default": "\"Installing uses almost no storage and provides a quick way  to return to this app\""
         },
         {
-          "name": "count",
-          "attribute": "count",
-          "description": "The number of times the button has been clicked.",
-          "type": "number",
-          "default": "0"
-        }
-      ],
-      "slots": [
+          "name": "title",
+          "attribute": "title",
+          "description": "Sets the title",
+          "type": "string",
+          "default": "\"Install\""
+        },
         {
-          "name": "",
-          "description": "This element has a slot"
-        }
-      ],
-      "cssParts": [
+          "name": "background",
+          "attribute": "background",
+          "description": "Defines the background color",
+          "type": "string",
+          "default": "\"#602ac1\""
+        },
         {
-          "name": "button",
-          "description": "The button"
+          "name": "show",
+          "attribute": "show",
+          "description": "If defined as show=\"false\", The componenet is not shown",
+          "type": "string",
+          "default": "\"true\""
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "description": "Defines color",
+          "type": "string",
+          "default": "\"#fff\""
         }
       ]
     },
     {
-      "name": "test-element",
-      "path": "./src/test-element.ts",
+      "name": "fn-pwa-button",
+      "path": "./src/fn-pwa-button.ts",
+      "description": "A custom pwa install button",
+      "attributes": [
+        {
+          "name": "value",
+          "description": "Sets value for the button",
+          "type": "string",
+          "default": "\"Install\""
+        },
+        {
+          "name": "background",
+          "description": "Defines the background color",
+          "type": "string",
+          "default": "\"#602ac1\""
+        },
+        {
+          "name": "color",
+          "description": "Defines the color for text and icon",
+          "type": "string",
+          "default": "\"#fff\""
+        },
+        {
+          "name": "size",
+          "description": "Sets width and height",
+          "type": "string",
+          "default": "\"56px\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Sets value for the button",
+          "type": "string",
+          "default": "\"Install\""
+        },
+        {
+          "name": "background",
+          "attribute": "background",
+          "description": "Defines the background color",
+          "type": "string",
+          "default": "\"#602ac1\""
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "description": "Defines the color for text and icon",
+          "type": "string",
+          "default": "\"#fff\""
+        },
+        {
+          "name": "size",
+          "attribute": "size",
+          "description": "Sets width and height",
+          "type": "string",
+          "default": "\"56px\""
+        }
+      ]
+    },
+    {
+      "name": "fn-pwa-status",
+      "path": "./src/fn-pwa-status.ts",
+      "description": "A custom pwa offline and online status banner",
+      "attributes": [
+        {
+          "name": "background",
+          "description": "Defines the background color",
+          "type": "string",
+          "default": "\"#602ac1\""
+        },
+        {
+          "name": "color",
+          "description": "Defines the color for text",
+          "type": "string",
+          "default": "\"#fff\""
+        },
+        {
+          "name": "value",
+          "description": "Defines value",
+          "type": "string",
+          "default": "\"It looks like you're offline\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "background",
+          "attribute": "background",
+          "description": "Defines the background color",
+          "type": "string",
+          "default": "\"#602ac1\""
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "description": "Defines the color for text",
+          "type": "string",
+          "default": "\"#fff\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "description": "Defines value",
+          "type": "string",
+          "default": "\"It looks like you're offline\""
+        }
+      ]
+    },
+    {
+      "name": "my-element",
+      "path": "./src/my-element.ts",
       "description": "An example element.",
       "attributes": [
         {

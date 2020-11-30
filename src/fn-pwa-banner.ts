@@ -120,6 +120,9 @@ export class FnPwaBanner extends LitElement{
   @property({type: String})
     value = `Installing uses almost no storage and provides a quick way  to return to this app`;
 
+  /**
+   * Sets the title 
+   */
   @property({type: String})
     title = `Install`;
 
@@ -129,9 +132,15 @@ export class FnPwaBanner extends LitElement{
   @property({type: String})
     background = "#602ac1";
 
+  /**
+   * If defined as show="false", The componenet is not shown
+   */
   @property({type: String})
     show = "true";
 
+  /**
+   * Defines color
+   */
   @property({type: String})
     color = "#fff";
 

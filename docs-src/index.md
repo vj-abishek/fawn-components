@@ -1,27 +1,27 @@
 ---
 layout: page.11ty.cjs
-title: <my-element> ⌲ Home
+title: fawn-components / Home
 ---
 
-# &lt;my-element>
+# fawn-componets
 
-`<my-element>` is an awesome element. It's a great introduction to building web components with LitElement, with nice documentation site as well.
+`fawn-components` is a simple custom components package for the modern web. It is built on web components, so it is supported in web frameworks like react, vue, angular etc. 
 
 ## As easy as HTML
 
 <section class="columns">
   <div>
 
-`<my-element>` is just an HTML element. You can it anywhere you can use HTML!
+`fawn-components` is just an HTML element. You can it anywhere you can use HTML!
 
 ```html
-<my-element></my-element>
+<fn-pwa-banner></fn-pwa-banner>
 ```
 
   </div>
   <div>
 
-<my-element></my-element>
+<fn-pwa-banner></fn-pwa-banner>
 
   </div>
 </section>
@@ -31,16 +31,16 @@ title: <my-element> ⌲ Home
 <section class="columns">
   <div>
 
-`<my-element>` can be configured with attributed in plain HTML.
+`<fn-pwa-button>` can be configured with attributed in plain HTML.
 
 ```html
-<my-element name="HTML"></my-element>
+<fn-pwa-button background="red"></fn-pwa-button>
 ```
 
   </div>
   <div>
 
-<my-element name="HTML"></my-element>
+<fn-pwa-button background="red"></fn-pwa-button>
 
   </div>
 </section>
@@ -50,14 +50,14 @@ title: <my-element> ⌲ Home
 <section class="columns">
   <div>
 
-`<my-element>` can be used with declarative rendering libraries like Angular, React, Vue, and lit-html
+`fawn-components` can be used with declarative rendering libraries like Angular, React, Vue, and lit-html
 
 ```js
 import React from 'react';
 
 const App = () => (
-  <h2>This is a &lt;my-element&gt;</h2>
-  <my-element name={name}></my-element>
+  <h2>This is fawn components</h2>
+  <fn-pwa-button ></fn-pwa-button>
 )
 ```
 

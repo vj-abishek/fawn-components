@@ -94,8 +94,12 @@ export class FnPwaButton extends LitElement{
    * 
    */
   @property({type: String})
-    color = "#fff"; 
-
+    color = "#fff";
+    
+  /**
+   * Sets width and height
+   * 
+   */
   @property({type: String})
     size = "56px";
 

@@ -23,6 +23,7 @@ export class FnPwaStatus extends LitElement{
         bottom:10px;
         width:80vw;
         left: 50%;
+        z-index:9999;
         transform: translateX(-50%);
         background:transparent;
         border-radius:8px;
@@ -33,7 +34,6 @@ export class FnPwaStatus extends LitElement{
         background-color:var(--fn-pwa-status);
         color:var(--fn-pwa-status-color);
         border-radius:8px;
-        z-index:9999;
         line-height:50px;
         display:flex;
         font-family: Segoe UI,system-ui,-apple-system,sans-serif;
@@ -72,7 +72,7 @@ export class FnPwaStatus extends LitElement{
   }
   `
 
-    /**
+  /**
    * Defines the background color
    */
   @property({type: String})
@@ -85,6 +85,10 @@ export class FnPwaStatus extends LitElement{
   @property({type: String})
     color = "#fff"; 
 
+  /**
+   * Defines value
+   * 
+   */
   @property({type: String})
     value = "It looks like you're offline";
 
