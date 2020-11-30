@@ -11,7 +11,7 @@ A simple web components for modern website
 - fn-pwa-status - A custom offline or online banner
 
 ## Usage
-## `npm i fawn-components`
+### `npm i fawn-components`
 
 In your entry file
 ```js
