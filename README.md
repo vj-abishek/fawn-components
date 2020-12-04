@@ -1,4 +1,4 @@
-# Fawn-Components
+# fawn-components
 
 A simple web components for modern website
 
