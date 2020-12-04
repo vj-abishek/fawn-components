@@ -26,9 +26,9 @@
         },
         {
           "name": "show",
-          "description": "If defined as show=\"false\", The componenet is not shown",
-          "type": "string",
-          "default": "\"true\""
+          "description": "If defined as show, The componenet is shown\n\nExample: \n<fn-pwa-banner show></fn-pwa-banner>",
+          "type": "boolean",
+          "default": "false"
         },
         {
           "name": "color",
@@ -62,9 +62,9 @@
         {
           "name": "show",
           "attribute": "show",
-          "description": "If defined as show=\"false\", The componenet is not shown",
-          "type": "string",
-          "default": "\"true\""
+          "description": "If defined as show, The componenet is shown\n\nExample: \n<fn-pwa-banner show></fn-pwa-banner>",
+          "type": "boolean",
+          "default": "false"
         },
         {
           "name": "color",
@@ -181,6 +181,52 @@
           "description": "Defines value",
           "type": "string",
           "default": "\"It looks like you're offline\""
+        }
+      ]
+    },
+    {
+      "name": "fn-ripple-btn",
+      "path": "./src/fn-ripple-btn.ts",
+      "description": "A button with ripple effect",
+      "attributes": [
+        {
+          "name": "background",
+          "description": "Defines the background color\n\nDefault color #602ac1",
+          "type": "string",
+          "default": "\"#602ac1\""
+        },
+        {
+          "name": "color",
+          "description": "Defines the color for text and icon\n\nDefault color #fff",
+          "type": "string",
+          "default": "\"#fff\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "background",
+          "attribute": "background",
+          "description": "Defines the background color\n\nDefault color #602ac1",
+          "type": "string",
+          "default": "\"#602ac1\""
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "description": "Defines the color for text and icon\n\nDefault color #fff",
+          "type": "string",
+          "default": "\"#fff\""
+        }
+      ],
+      "events": [
+        {
+          "name": "fn-click"
+        }
+      ],
+      "slots": [
+        {
+          "name": "",
+          "description": "This component has slot"
         }
       ]
     },

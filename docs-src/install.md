@@ -23,13 +23,19 @@ For this element to work from unpkg.com specifically, you need to include the `?
 ```html
 <script type="module" src="https://unpkg.com/fawn-components?module"></script>
 ```
-This will import the whole components
+Note: This will import the whole components
 
 ### Seperate components
 ```html
 <script type="module" src="https://unpkg.com/fawn-components@latest/lib/fn-pwa-banner.js?module"></script>
 ```
 In place of `fn-pwa-banner` replace it with the component you want to you
+
+Example:
+```html
+<script type="module" src="https://unpkg.com/fawn-components@latest/lib/fn-ripple-btn.js?module"></script>
+```
+
 ### JavaScript
 ```html
 import 'https://unpkg.com/fawn-components?module';
