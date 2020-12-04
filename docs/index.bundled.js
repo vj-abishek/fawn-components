@@ -433,7 +433,7 @@ var et=function(t,i,s,e){for(var n,o=arguments.length,r=o<3?i:null===e?e=Object.
         <slot></slot>
     </button>
     `}_onClick(t){const i=new CustomEvent("fn-click");this.dispatchEvent(i);const s=this._fnbutton,e=document.createElement("span"),n=Math.max(s.clientWidth,s.clientHeight),o=n/2;e.style.width=e.style.height=`${n}px`,e.style.left=`${t.clientX-s.offsetLeft-o}px`,e.style.top=`${t.clientY-s.offsetTop-o}px`,e.classList.add("ripple");const r=s.getElementsByClassName("ripple")[0];r&&r.remove(),s.appendChild(e)}};var ut;dt.styles=tt` 
-  button {
+  #fn-material-button {
     position: relative;
     overflow: hidden;
     transition: background 400ms;
@@ -453,6 +453,10 @@ var et=function(t,i,s,e){for(var n,o=arguments.length,r=o<3?i:null===e?e=Object.
     transform: scale(0);
     animation: ripple 600ms linear;
     background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    #fn-material-button:hover{
+      opacity:0.95;
     }
 
     @keyframes ripple {

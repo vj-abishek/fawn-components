@@ -15,6 +15,7 @@ module.exports = function (data) {
     <title>${title}</title>
     <link rel="stylesheet" href="${relative(page.url, '/docs.css')}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Roboto+Mono">
+    <meta name="google-site-verification" content="b7b8dkNpg_nYdz-Y85mYRDu36D5qbeQrDWY96fIxPO8" />
     <link href="${relative(page.url, '/prism-okaidia.css')}" rel="stylesheet" />
     <link rel="icon" href="${relative(page.url, '/fawn.png')}"/>
     <script type="module" src="${relative(page.url, '/index.bundled.js')}"></script>
