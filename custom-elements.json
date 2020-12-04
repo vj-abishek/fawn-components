@@ -26,7 +26,13 @@
         },
         {
           "name": "show",
-          "description": "If defined as show, The componenet is shown\n\nExample: \n<fn-pwa-banner show></fn-pwa-banner>",
+          "description": "If defined as show, The componenet is shown \nExample: <fn-pwa-banner show></fn-pwa-banner>",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "testing",
+          "description": "If testing is true, it will show the component",
           "type": "boolean",
           "default": "false"
         },
@@ -62,7 +68,14 @@
         {
           "name": "show",
           "attribute": "show",
-          "description": "If defined as show, The componenet is shown\n\nExample: \n<fn-pwa-banner show></fn-pwa-banner>",
+          "description": "If defined as show, The componenet is shown \nExample: <fn-pwa-banner show></fn-pwa-banner>",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "testing",
+          "attribute": "testing",
+          "description": "If testing is true, it will show the component",
           "type": "boolean",
           "default": "false"
         },
@@ -76,8 +89,8 @@
       ]
     },
     {
-      "name": "fn-pwa-button",
-      "path": "./src/fn-pwa-button.ts",
+      "name": "fn-pwa-btn",
+      "path": "./src/fn-pwa-btn.ts",
       "description": "A custom pwa install button",
       "attributes": [
         {
@@ -103,6 +116,12 @@
           "description": "Sets width and height",
           "type": "string",
           "default": "\"56px\""
+        },
+        {
+          "name": "testing",
+          "description": "If testing is true, it will show the component",
+          "type": "boolean",
+          "default": "false"
         }
       ],
       "properties": [
@@ -133,6 +152,13 @@
           "description": "Sets width and height",
           "type": "string",
           "default": "\"56px\""
+        },
+        {
+          "name": "testing",
+          "attribute": "testing",
+          "description": "If testing is true, it will show the component",
+          "type": "boolean",
+          "default": "false"
         }
       ]
     },

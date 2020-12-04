@@ -1,4 +1,4 @@
-const {createDefaultConfig} = require('@open-wc/testing-karma');
+const { createDefaultConfig } = require('@open-wc/testing-karma');
 const merge = require('deepmerge');
 
 module.exports = (config) => {
@@ -6,11 +6,11 @@ module.exports = (config) => {
     merge(createDefaultConfig(config), {
       frameworks: ['mocha', 'chai'],
       client: {
-        mocha: {ui: 'tdd'},
+        mocha: { ui: 'tdd' },
       },
       files: [
         {
-          pattern: config.grep ? config.grep : 'test/**/*_test.js',
+          pattern: config.grep ? config.grep : './test/**/*_test.js',
           type: 'module',
         },
       ],

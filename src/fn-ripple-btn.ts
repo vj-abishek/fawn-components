@@ -22,7 +22,7 @@ export class FnRippleBtn extends LitElement{
     }
 
   static styles = css` 
-  button {
+  #fn-material-button {
     position: relative;
     overflow: hidden;
     transition: background 400ms;
@@ -42,6 +42,10 @@ export class FnRippleBtn extends LitElement{
     transform: scale(0);
     animation: ripple 600ms linear;
     background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    #fn-material-button:hover{
+      opacity:0.95;
     }
 
     @keyframes ripple {

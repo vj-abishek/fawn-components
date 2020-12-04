@@ -161,3 +161,9 @@ td, th {
   padding: 4px;
   text-align: left;
 }
+
+.flex-center{
+  display:flex;
+  place-items:center;
+  justify-content:center;
+}

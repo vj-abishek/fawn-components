@@ -133,13 +133,17 @@ export class FnPwaBanner extends LitElement{
     background = "#602ac1";
 
   /**
-   * If defined as show, The componenet is shown
-   * 
-   * Example: 
-   * <fn-pwa-banner show></fn-pwa-banner>
+   * If defined as show, The componenet is shown 
+   * Example: <fn-pwa-banner show></fn-pwa-banner>
    */
   @property({type: Boolean})
     show = false;
+
+  /**
+   * If testing is true, it will show the component
+   */
+  @property({type: Boolean})
+    testing = false; 
 
   /**
    * Defines color
@@ -148,7 +152,7 @@ export class FnPwaBanner extends LitElement{
     color = "#fff";
 
   render() {
-    return this._trigger && this.show ? html`
+    return (this._trigger && this.show || this.testing) ? html`
         <div class="fn-pwa-banner" 
              style= "--fn-pwa-banner-background: ${this.background};--fn-pwa-banner-color: ${this.color}"
         >

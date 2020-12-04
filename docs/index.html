@@ -32,7 +32,7 @@
 <h3>Collections</h3>
 <h3><code>PWA Components</code></h3>
 <ul>
-<li>fn-pwa-button - A custom install button</li>
+<li>fn-pwa-btn - A custom install button</li>
 <li>fn-pwa-banner - A custom install banner</li>
 <li>fn-pwa-status - A custom offline or online banner</li>
 </ul>
@@ -43,11 +43,11 @@
 <h2>As easy as HTML</h2>
 <section class="columns">
   <div>
-<p><code>fawn-components</code> is just an HTML element. You can it anywhere you can use HTML!</p>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fn-ripple-btn</span><span class="token punctuation">></span></span>Click me<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fn-ripple-btn</span><span class="token punctuation">></span></span></code></pre>
+<p><code>fawn-components</code> is just an HTML element. You can use it anywhere you can use HTML!</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fn-pwa-btn</span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>Custom PWA Install<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fn-pwa-btn</span><span class="token punctuation">></span></span><br></code></pre>
   </div>
-  <div>
-<p><fn-ripple-btn>Click me</fn-ripple-btn></p>
+  <div class="flex-center">
+<p><fn-pwa-btn value="Custom PWA Install" testing></fn-pwa-btn></p>
   </div>
 </section>
 <h2>Configure with attributes</h2>
@@ -56,8 +56,8 @@
 <p><code>&lt;fn-ripple-btn&gt;</code> can be configured with attributed in plain HTML.</p>
 <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fn-ripple-btn</span> <span class="token attr-name">background</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>red<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Click me<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fn-ripple-btn</span><span class="token punctuation">></span></span></code></pre>
   </div>
-  <div>
-<p><fn-ripple-btn background="red">Click me</fn-ripple-btn></p>
+  <div class="flex-center">
+<p><fn-ripple-btn background="red">Ripple button</fn-ripple-btn></p>
   </div>
 </section>
 <h2>Configure with events</h2>
@@ -68,7 +68,7 @@
 <p>In javascript</p>
 <pre class="language-js"><code class="language-js"><span class="token keyword">const</span> button <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'fn-ripple-btn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>button<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span><span class="token string">'fn-click'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'button is clicked'</span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre>
   </div>
-  <div>
+  <div class="flex-center">
 <p><fn-ripple-btn>Click me</fn-ripple-btn></p>
   </div>
 </section>
@@ -78,7 +78,7 @@
 <p><code>fawn-components</code> can be used with declarative rendering libraries like Angular, React, Vue, and lit-html</p>
 <pre class="language-js"><code class="language-js"><span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span><br><br><span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span><br>  <span class="token operator">&lt;</span>h2<span class="token operator">></span>This is fawn components<span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span><br>  <span class="token operator">&lt;</span>fn<span class="token operator">-</span>ripple<span class="token operator">-</span>btn<span class="token operator">></span>Hurray<span class="token operator">&lt;</span><span class="token operator">/</span>fn<span class="token operator">-</span>ripple<span class="token operator">-</span>btn<span class="token operator">></span><br><span class="token punctuation">)</span></code></pre>
   </div>
-  <div>
+  <div class="flex-center" style="flex-direction:column">
 <h2>This is fawn components</h2>
 <fn-ripple-btn>Hurray</fn-ripple-btn>
   </div>

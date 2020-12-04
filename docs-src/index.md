@@ -12,7 +12,7 @@ title: fawn-components / Home
 
 ### `PWA Components`
 
-- fn-pwa-button - A custom install button
+- fn-pwa-btn - A custom install button
 - fn-pwa-banner - A custom install banner
 - fn-pwa-status - A custom offline or online banner
 
@@ -24,16 +24,17 @@ title: fawn-components / Home
 <section class="columns">
   <div>
 
-`fawn-components` is just an HTML element. You can it anywhere you can use HTML!
+`fawn-components` is just an HTML element. You can use it anywhere you can use HTML!
 
 ```html
-<fn-ripple-btn>Click me</fn-ripple-btn>
+<fn-pwa-btn value="Custom PWA Install"></fn-pwa-btn>
+
 ```
 
   </div>
-  <div>
+  <div class="flex-center">
 
-<fn-ripple-btn>Click me</fn-ripple-btn>
+<fn-pwa-btn value="Custom PWA Install" testing></fn-pwa-btn>
 
   </div>
 </section>
@@ -50,9 +51,9 @@ title: fawn-components / Home
 ```
 
   </div>
-  <div>
+  <div class="flex-center">
 
-<fn-ripple-btn background="red">Click me</fn-ripple-btn>
+<fn-ripple-btn background="red">Ripple button</fn-ripple-btn>
 
   </div>
 </section>
@@ -74,7 +75,7 @@ button.addEventListener('fn-click', () => console.log('button is clicked'))
 
   </div>
 
-  <div>
+  <div class="flex-center">
 
 <fn-ripple-btn>Click me</fn-ripple-btn>
 
@@ -98,7 +99,7 @@ const App = () => (
 ```
 
   </div>
-  <div>
+  <div class="flex-center" style="flex-direction:column">
 
 <h2>This is fawn components</h2>
 <fn-ripple-btn>Hurray</fn-ripple-btn>
